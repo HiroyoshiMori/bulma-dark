@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "author": {
     "name": "Hiroyoshi Mori",
-    "email": "mori@script-lab.work"
+    "email": "mori@scriptlab.tokyo"
   },
   "description": "Dark theme for Bulma, the modern CSS framework.",
   "main": "bulma-dark.sass",
@@ -34,10 +34,10 @@
     "build-sass": "node-sass --output-style expanded --source-map true bulma-dark.sass css/bulma-dark.css",
     "clean": "rimraf css",
     "rtl": "npm run rtl-sass && npm run rtl-autoprefix && npm run rtl-cleancss",
-    "rtl-sass": "node-sass --outputstyle expanded --source-map true bulma-dark-rtl.sass css/bulma-dark-rtl.css",
+    "rtl-sass": "node-sass --output-style expanded --source-map true bulma-dark-rtl.sass css/bulma-dark-rtl.css",
     "rtl-autoprefix": "postcss --use autoprefixer --map false --output css/bulma-dark-rtl.css",
     "rlt-cleancss": "cleancss -o css/bulma-dark-rtl.min.css css/bulma-dark-rtl.css",
-    "deploy": "npm run clean && npm run build && rpn run rtl",
+    "deploy": "npm run clean && npm run build && npm run rtl",
     "start": "npm run build-sass -- --watch"
   },
   "files": [
