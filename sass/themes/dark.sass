@@ -1,0 +1,69 @@
+@charset "utf-8"
+/**
+ * Bulma Dark Theme
+ */
+// Import necessary library before using
+@import "../../node_modules/bulma/sass/utilities/initial-variables"
+@import "../../node_modules/bulma/sass/utilities/functions"
+@import "../../node_modules/bulma/sass/utilities/derived-variables"
+@import "../utilities/functions"
+
+// -----
+// Override derived variables
+// -----
+
+$primary: getInvertedColor($primary)
+$primary-invert: getInvertedColor($primary)
+$primary-light: getDarkerColor($primary)
+$primary-dark: getLighterColor($primary)
+$light: getInvertedColor($light)
+$dark: getInvertedColor($dark)
+$light-invert: getInvertedColor($light)
+$dark-invert: getInvertedColor($dark)
+
+// General colors
+$scheme-main: getInvertedColor($scheme-main)
+$scheme-main-bis: getInvertedColor($scheme-main-bis)
+$scheme-main-ter: getInvertedColor($scheme-main-ter)
+$scheme-invert: getInvertedColor($scheme-invert)
+$scheme-invert-bis: getInvertedColor($scheme-invert-bis)
+$scheme-invert-ter: getInvertedColor($scheme-invert-ter)
+
+$background: getInvertedColor($background)
+$border: getInvertedColor($border)
+$border-hover: getInvertedColor($border-hover)
+$border-light: getInvertedColor($border-light)
+$border-light-hover: getInvertedColor($border-light-hover)
+
+// Text colors
+
+$text: getInvertedColor($text)
+$text-invert: getInvertedColor($text-invert)
+$text-light: getInvertedColor($text-light)
+$text-strong: getInvertedColor($text-strong)
+
+// Code colors
+
+$code: getInvertedColor($code)
+$code-background: getInvertedColor($code-background)
+$pre: getInvertedColor($pre)
+$pre-background: getInvertedColor($pre-background)
+
+// Link colors
+
+$link: getInvertedColor($link)
+$link-invert: getInvertedColor($link-invert)
+$link-light: getInvertedColor($link-light)
+$link-dark: getInvertedColor($link-dark)
+$link-visited: getInvertedColor($link-visited)
+$link-hover: getInvertedColor($link-hover)
+$link-hover-border: getInvertedColor($link-hover-border)
+$link-focus: getInvertedColor($link-focus)
+$link-focus-border: getInvertedColor($link-focus-border)
+$link-active: getInvertedColor($link-active)
+$link-active-border: getInvertedColor($link-active-border)
+
+// Lists and maps
+$colors: mergeColorMaps(("white": (getInvertedColor($white), getInvertedColor($black)), "black": (getInvertedColor($black), getInvertedColor($white)), "light": (getInvertedColor($light), getInvertedColor($light-invert)), "dark": (getInvertedColor($dark), getInvertedColor($dark-invert)), "primary": ($primary, $primary-invert, $primary-light, $primary-dark), "link": ($link, $link-invert, $link-light, $link-dark), "info": ($info, $info-invert, $info-light, $info-dark), "success": ($success, $success-invert, $success-light, $success-dark), "warning": ($warning, $warning-invert, $warning-light, $warning-dark), "danger": ($danger, $danger-invert, $danger-light, $danger-dark)), $custom-colors)
+
+$shades: mergeColorMaps(("black-bis": getInvertedColor($black-bis), "black-ter": getInvertedColor($black-ter), "grey-darker": getInvertedColor($grey-darker), "grey-dark": getInvertedColor($grey-dark), "grey": getInvertedColor($grey), "grey-light": getInvertedColor($grey-light), "grey-lighter": getInvertedColor($grey-lighter), "white-ter": getInvertedColor($white-ter), "white-bis": getInvertedColor($white-bis)), $custom-shades)
