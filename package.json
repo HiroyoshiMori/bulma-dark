@@ -1,6 +1,6 @@
 {
   "name": "@hiroyoshi-mori/bulma-inverted",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Hiroyoshi Mori <mori@scriptlab.tokyo>",
   "description": "Dark theme, color inverted, for Bulma, the modern CSS framework.",
   "main": "bulma-inverted.sass",
