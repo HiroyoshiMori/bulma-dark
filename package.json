@@ -1,10 +1,7 @@
 {
-  "name": "bulma-dark",
-  "version": "0.0.1",
-  "author": {
-    "name": "Hiroyoshi Mori",
-    "email": "mori@scriptlab.tokyo"
-  },
+  "name": "@hiroyoshi-mori/bulma-dark",
+  "version": "0.1.0",
+  "author": "Hiroyoshi Mori <mori@scriptlab.tokyo>",
   "description": "Dark theme for Bulma, the modern CSS framework.",
   "main": "bulma-dark.sass",
   "unpkg": "css/bulma-dark.css",
@@ -46,5 +43,13 @@
     "bulma-dark.sass",
     "LICENSE",
     "README.md"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HiroyoshiMori/bulma-dark.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HiroyoshiMori/bulma-dark/issues"
+  },
+  "homepage": "https://github.com/HiroyoshiMori/bulma-dark#readme"
 }
