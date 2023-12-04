@@ -1,7 +1,9 @@
-# Bulma Dark Theme
+# Bulma Color Inverted Theme
 
 [Bulma](https://bulma.io) is a **modarn CSS framework** based on [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes).
 And this is dark theme with it.
+
+And this theme makes colors in derived variables inverted, so you may not be able to use it with Bulma itself.
 
 <a href="https://bulma.io"><img src="https://raw.githubusercontent.com/jgthms/bulma/master/docs/images/bulma-banner.png" alt="Bulma: a Flexbox CSS framework" style="max-width:100%;" width="600"></a>
 
