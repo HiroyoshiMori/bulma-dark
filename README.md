@@ -9,14 +9,16 @@ And this is dark theme with it.
 
 ### Download
 
-Download this package and put it into node_modules/bulma-dark directory.
+```shell
+npm install @hiroyoshi-mori/bulma-inverted
+```
 
 ### Import
 
 After installation, you can import the CSS file into your project using this snippet:
 
 ```css
-@import 'bulma-dark/css/bulma-dark.css'
+@import '@hiroyoshi-mori/bulma-inverted/css/bulma-inverted.css'
 ```
 
 Feel free to raise an issue or submit a pull request.
