@@ -1,14 +1,11 @@
 {
-  "name": "bulma-dark",
+  "name": "@hiroyoshi-mori/bulma-inverted",
   "version": "0.1.0",
-  "author": {
-    "name": "Hiroyoshi Mori",
-    "email": "mori@scriptlab.tokyo"
-  },
-  "description": "Dark theme for Bulma, the modern CSS framework.",
-  "main": "bulma-dark.sass",
-  "unpkg": "css/bulma-dark.css",
-  "style": "bulma-dark/css/bulma-dark.min.css",
+  "author": "Hiroyoshi Mori <mori@scriptlab.tokyo>",
+  "description": "Dark theme, color inverted, for Bulma, the modern CSS framework.",
+  "main": "bulma-inverted.sass",
+  "unpkg": "css/bulma-inverted.css",
+  "style": "bulma-inverted/css/bulma-inverted.min.css",
   "license": "MIT",
   "keywords": [
     "css",
@@ -29,22 +26,30 @@
   },
   "scripts": {
     "build": "npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
-    "build-autoprefix": "postcss --use autoprefixer --map false --output css/bulma-dark.css css/bulma-dark.css",
-    "build-cleancss": "cleancss -o css/bulma-dark.min.css css/bulma-dark.css",
-    "build-sass": "node-sass --output-style expanded --source-map true bulma-dark.sass css/bulma-dark.css",
+    "build-autoprefix": "postcss --use autoprefixer --map false --output css/bulma-inverted.css css/bulma-inverted.css",
+    "build-cleancss": "cleancss -o css/bulma-dark.min.css css/bulma-inverted.css",
+    "build-sass": "node-sass --output-style expanded --source-map true bulma-inverted.sass css/bulma-inverted.css",
     "clean": "rimraf css",
     "rtl": "npm run rtl-sass && npm run rtl-autoprefix && npm run rtl-cleancss",
-    "rtl-sass": "node-sass --output-style expanded --source-map true bulma-dark-rtl.sass css/bulma-dark-rtl.css",
-    "rtl-autoprefix": "postcss --use autoprefixer --map false --output css/bulma-dark-rtl.css",
-    "rlt-cleancss": "cleancss -o css/bulma-dark-rtl.min.css css/bulma-dark-rtl.css",
+    "rtl-sass": "node-sass --output-style expanded --source-map true bulma-inverted-rtl.sass css/bulma-inverted-rtl.css",
+    "rtl-autoprefix": "postcss --use autoprefixer --map false --output css/bulma-inverted-rtl.css",
+    "rlt-cleancss": "cleancss -o css/bulma-inverted-rtl.min.css css/bulma-inverted-rtl.css",
     "deploy": "npm run clean && npm run build && npm run rtl",
     "start": "npm run build-sass -- --watch"
   },
   "files": [
     "css",
     "sass",
-    "bulma-dark.sass",
+    "bulma-inverted.sass",
     "LICENSE",
     "README.md"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HiroyoshiMori/bulma-dark.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HiroyoshiMori/bulma-dark/issues"
+  },
+  "homepage": "https://github.com/HiroyoshiMori/bulma-dark#readme"
 }
