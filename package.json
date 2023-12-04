@@ -46,5 +46,13 @@
     "bulma-dark.sass",
     "LICENSE",
     "README.md"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HiroyoshiMori/bulma-dark.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HiroyoshiMori/bulma-dark/issues"
+  },
+  "homepage": "https://github.com/HiroyoshiMori/bulma-dark#readme"
 }
